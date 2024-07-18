@@ -69,18 +69,3 @@ function createCard(products) {
     cards.appendChild(card);
   });
 }
-
-let badgeNumber = 0;
-const badge = document.querySelector(".badge");
-
-function addBasket() {
-  const btn__ghost = document.querySelector(".btn");
-
-  btn__ghost.addEventListener("click", () => {
-    badgeNumber++;
-    badge.innerHTML = `${5}`;
-    console.log(badgeNumber);
-  });
-}
-
-addBasket();
